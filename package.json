@@ -1,0 +1,14 @@
+{
+  "name": "javascript-exercises",
+  "version": "0.0.1",
+  "description": "JavaScript exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Niels Hoppe <mail@nielshoppe.de>",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^1.3.1"
+  }
+}
