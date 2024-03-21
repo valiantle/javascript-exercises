@@ -1,4 +1,12 @@
 /**
+ * Die folgenden drei Zeilen braucht ihr nicht verstehen!
+ * ( Dürft ihr aber, wenn ich wollt. ;-) )
+ */
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const countries = require("./countries.json");
+
+/**
  * Schreibe eine Funktion, die ein Land daraufhin prüft, ob es in Europa liegt.
  * 
  * @param {*} country 
