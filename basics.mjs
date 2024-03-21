@@ -8,6 +8,38 @@
 // ...
 // ...
 
+/**
+ * Schreibe eine Funktion, die eine Temeratur in Celsius in eine Temperatur in
+ * Fahrenheit umrechnet.
+ * 
+ * @param {*} celsius 
+ */
+export function inFahrenheit (celsius) {
+
+    // ...
+}
+
+/**
+ * Schreibe eine Funktion, die eine Temeratur in Fahrenheit in eine Temperatur
+ * in Celsius umrechnet.
+ * 
+ * @param {*} celsius 
+ */
+export const inCelsius = (fahrenheit) => {
+
+    // ...
+}
+
+/**
+ * Schreibe eine Funktion, die prüft, ob eine Zahl gerade ist.
+ */
+export const isEven = () => undefined // TODO
+
+/**
+ * Schreibe eine Funktion, die prüft, ob eine Zahl ungerade ist.
+ */
+export const isOdd = () => undefined // TODO
+
 // Kontrollfluss
 
 // if
