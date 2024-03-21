@@ -45,6 +45,23 @@ export const isOdd = () => undefined // TODO
 // if
 
 /**
+ * Schreibe eine Funkntion, die abhängig von dem als Zahl eingegebenen Monat die
+ * passende Jahreszeit zurückgibt. Und zwar
+ * 
+ * "Frühling" für die Monate März, April, Mai
+ * "Sommer" für die Monate Juni, Juli, August
+ * "Herbst" für die Monate September, Oktober, November und
+ * "Winter" für die Monate Dezember, Januar und Februar.
+ *
+ * @param {int} monat 
+ * @returns {string} Jahreszeit
+ */
+export function jahreszeit (monat) {
+
+    // ...
+}
+
+/**
  * Schreibe eine Funktion, die die Umsatzsteuer anhand des Umsatzes und des
  * Steuerjahres berechnet. Der Steuersatz beträgt 19%. Liegt der Umsatz unter
  * der Freigrenze von 17.500 EUR (für die Steuerjahre 2003-2019) bzw. 22.000 EUR
