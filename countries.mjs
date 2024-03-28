@@ -66,10 +66,6 @@ export function allNames (country) {
  * @param {object} obj 
  * @param {[*]} keys 
  * @returns {object}
- * 
- * @param {*} obj 
- * @param {*} keys 
- * @returns 
  */
 export function filterKeys (obj, keys) {
     
