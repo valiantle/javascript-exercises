@@ -12,7 +12,8 @@
  * Schreibe eine Funktion, die eine Temeratur in Celsius in eine Temperatur in
  * Fahrenheit umrechnet.
  * 
- * @param {*} celsius 
+ * @param {number} celsius 
+ * @return {number}
  */
 export function inFahrenheit (celsius) {
 
@@ -23,7 +24,8 @@ export function inFahrenheit (celsius) {
  * Schreibe eine Funktion, die eine Temeratur in Fahrenheit in eine Temperatur
  * in Celsius umrechnet.
  * 
- * @param {*} celsius 
+ * @param {number} celsius 
+ * @return {number}
  */
 export const inCelsius = (fahrenheit) => {
 
@@ -32,11 +34,17 @@ export const inCelsius = (fahrenheit) => {
 
 /**
  * Schreibe eine Funktion, die prüft, ob eine Zahl gerade ist.
+ * 
+ * @param {int} number
+ * @return {boolean}
  */
 export const isEven = () => undefined // TODO
 
 /**
  * Schreibe eine Funktion, die prüft, ob eine Zahl ungerade ist.
+ * 
+ * @param {int} number
+ * @return {boolean}
  */
 export const isOdd = () => undefined // TODO
 
@@ -68,9 +76,9 @@ export function jahreszeit (monat) {
  * (für die Steuerjahre ab 2020) soll die Kleinunternehmerregelung angewendet
  * und keine Umsatzsteuer berechnet werden. Der Rückgabewert ist dann 0.
  * 
- * @param {*} umsatz 
- * @param {*} steuerjahr 
- * @returns 
+ * @param {number} umsatz 
+ * @param {int} steuerjahr 
+ * @returns {number}
  */
 export function umsatzsteuer (umsatz, steuerjahr = 2024) {
     
@@ -88,9 +96,9 @@ export function umsatzsteuer (umsatz, steuerjahr = 2024) {
  * Für die Berechnung eines Dreieckes sowie eines Rechteckes werden die Länge
  * der Grundseite (base) sowie die Höhe (height) benötigt.
  * 
- * @param {*} shape 
- * @param {*} params 
- * @returns 
+ * @param {string} shape 
+ * @param {object} params 
+ * @returns {number}
  */
 export const area = (shape, params) => {
     
@@ -106,7 +114,7 @@ export const area = (shape, params) => {
  * Die Karten werden als Array bestehend aus Farbe und Wert dargestellt und alle
  * Karten in einem Array gesammelt zurückgegeben.
  * 
- * @returns 
+ * @returns {[[string, string]]}
  */
 export function deckOfCards () {
     
@@ -117,7 +125,7 @@ export function deckOfCards () {
  * Schreibe eine Funktion, die die ersten N Antworten für das FizzBuzz-Spiel
  * erzeugt und auf der Konsole ausgibt.
  * 
- * @param {*} n 
+ * @param {int} n 
  * @see https://de.wikipedia.org/wiki/Fizz_buzz
  */
 export function fizzbuzz (n) {
@@ -130,8 +138,8 @@ export function fizzbuzz (n) {
 /**
  * Schreibe eine rekursive Funktion, die die N-te Fibonacci-Zahl berechnet.
  * 
- * @param {*} n 
- * @returns n-th Fibonacci number
+ * @param {int} n 
+ * @returns {int} n-th Fibonacci number
  * @see https://de.wikipedia.org/wiki/Fibonacci-Folge
  */
 export function fibonacci (n) {

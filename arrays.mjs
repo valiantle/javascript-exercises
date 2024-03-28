@@ -6,7 +6,8 @@ import { isEven, isOdd } from './basics.mjs'
  * 
  * Optional: Verwende deine Funktion isOdd aus den basics
  * 
- * @param {[number]} numbers 
+ * @param {[int]} numbers
+ * @returns {[int]}
  */
 export function filterOdd (numbers) {
 
@@ -19,7 +20,8 @@ export function filterOdd (numbers) {
  * 
  * Optional: Verwende deine Funktion isEven aus den basics
  * 
- * @param {[numbers]} numbers 
+ * @param {[int]} numbers 
+ * @returns {[int]}
  */
 export function filterEven (numbers) {
 
