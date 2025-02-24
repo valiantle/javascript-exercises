@@ -1,6 +1,6 @@
 import { afterAll, expect, test, vi } from "vitest"
 
-import { add, substract, multiply, divide, umsatzsteuer } from "./basics.mjs"
+import { add, subtract, multiply, divide, umsatzsteuer } from "./basics.mjs"
 import { area, fizzbuzz, fibonacci } from "./basics.mjs"
 
 test('Adding 5 to 3 gives 8', () => {
@@ -8,7 +8,7 @@ test('Adding 5 to 3 gives 8', () => {
 })
 
 test('Substracting 5 from 8 gives 3', () => {
-    expect(substract(8, 5)).toBe(3)
+    expect(subtract(8, 5)).toBe(3)
 })
 
 test('Multiplying 4 by 6 gives 24', () => {

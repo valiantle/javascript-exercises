@@ -1,5 +1,5 @@
 /**
- * Schreibe je eine Funtion add, substract, multiply, divide, die die
+ * Schreibe je eine Funtion add, subtract, multiply, divide, die die
  * jeweilige Grundrechenart auf die beiden übergebenen Parameter A und B
  * anwendet. Verwende Arrow-Funktionen.
  */
