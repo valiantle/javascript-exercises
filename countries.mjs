@@ -1,6 +1,6 @@
 /**
  * Die folgenden drei Zeilen braucht ihr nicht verstehen!
- * ( Dürft ihr aber, wenn ich wollt. ;-) )
+ * ( Dürft ihr aber, wenn ihr wollt. ;-) )
  */
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);

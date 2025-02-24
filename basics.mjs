@@ -53,7 +53,7 @@ export const isOdd = () => undefined // TODO
 // if
 
 /**
- * Schreibe eine Funkntion, die abhängig von dem als Zahl eingegebenen Monat die
+ * Schreibe eine Funktion, die abhängig von dem als Zahl eingegebenen Monat die
  * passende Jahreszeit zurückgibt. Und zwar
  * 
  * "Frühling" für die Monate März, April, Mai

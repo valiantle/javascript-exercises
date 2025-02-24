@@ -20,7 +20,7 @@ test('Dividing 12 by 4 gives 3', () => {
 })
 
 test('Umsatzsteuer 2005 (18k)', () => {
-    expect(umsatzsteuer(18000, 2020)).toBe(3420)
+    expect(umsatzsteuer(18000, 2005)).toBe(3420)
 })
 
 test('Umsatzsteuer 2020 (10k)', () => {
