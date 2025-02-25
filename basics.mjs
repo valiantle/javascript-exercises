@@ -161,63 +161,62 @@ export const area = (shape, params) => {
  * 
  * @returns {[[string, string]]}
  */
-// export function deckOfCards () {
-//     let fullDeck = [];
-//     for (let i=2; i<=14; i++){
-//         if (i<=10) {
-//             fullDeck.push(["Clubs", i]);
-//         } else {
-//             const newVal = {
-//                 11: "J",
-//                 12: "Q",
-//                 13: "K",
-//                 14: "A"
-//             };
-//             fullDeck.push(["Clubs", newVal[i]])
-//         }
-//     };
-//     for (let i=2; i<=14; i++){
-//         if (i<=10) {
-//             fullDeck.push(["Spades", i]);
-//         } else {
-//             const newVal = {
-//                 11: "J",
-//                 12: "Q",
-//                 13: "K",
-//                 14: "A"
-//             };
-//             fullDeck.push(["Spades", newVal[i]])
-//         }
-//     };
-//     for (let i=2; i<=14; i++){
-//         if (i<=10) {
-//             fullDeck.push(["Hearts", i]);
-//         } else {
-//             const newVal = {
-//                 11: "J",
-//                 12: "Q",
-//                 13: "K",
-//                 14: "A"
-//             };
-//             fullDeck.push(["Hearts", newVal[i]])
-//         }
-//     }
-//     for (let i=2; i<=14; i++){
-//         if (i<=10) {
-//             fullDeck.push(["Diamonds", i]);
-//         } else {
-//             const newVal = {
-//                 11: "J",
-//                 12: "Q",
-//                 13: "K",
-//                 14: "A"
-//             };
-//             fullDeck.push(["Diamonds", newVal[i]])
-//         }
-//     }
-//     return fullDeck;
-//     // ...
-// }
+export function deckOfCards () {
+    let fullDeck = [];
+    for (let i=2; i<=14; i++){
+        if (i<=10) {
+            fullDeck.push(["Clubs", i]);
+        } else {
+            const newVal = {
+                11: "J",
+                12: "Q",
+                13: "K",
+                14: "A"
+            };
+            fullDeck.push(["Clubs", newVal[i]])
+        }
+    };
+    for (let i=2; i<=14; i++){
+        if (i<=10) {
+            fullDeck.push(["Spades", i]);
+        } else {
+            const newVal = {
+                11: "J",
+                12: "Q",
+                13: "K",
+                14: "A"
+            };
+            fullDeck.push(["Spades", newVal[i]])
+        }
+    };
+    for (let i=2; i<=14; i++){
+        if (i<=10) {
+            fullDeck.push(["Hearts", i]);
+        } else {
+            const newVal = {
+                11: "J",
+                12: "Q",
+                13: "K",
+                14: "A"
+            };
+            fullDeck.push(["Hearts", newVal[i]])
+        }
+    }
+    for (let i=2; i<=14; i++){
+        if (i<=10) {
+            fullDeck.push(["Diamonds", i]);
+        } else {
+            const newVal = {
+                11: "J",
+                12: "Q",
+                13: "K",
+                14: "A"
+            };
+            fullDeck.push(["Diamonds", newVal[i]])
+        }
+    }
+    return fullDeck;
+};
 
 /**
  * Schreibe eine Funktion, die die ersten N Antworten für das FizzBuzz-Spiel
