@@ -9,6 +9,7 @@
   "author": "Niels Hoppe <mail@nielshoppe.de>",
   "license": "ISC",
   "devDependencies": {
+    "@vitest/ui": "^3.0.7",
     "vitest": "^3.0.0"
   }
 }

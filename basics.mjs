@@ -6,7 +6,14 @@
 // export const ...
 // ...
 // ...
+
+import { J } from "vitest/dist/chunks/reporters.QZ837uWx.js";
+
 // ...
+export const add = (a, b) => a+b;
+export const subtract = (a, b) => a-b;
+export const multiply = (a, b) => a*b;
+export const divide = (a, b) => a/b;
 
 /**
  * Schreibe eine Funktion, die eine Temeratur in Celsius in eine Temperatur in
@@ -16,7 +23,9 @@
  * @return {number}
  */
 export function inFahrenheit (celsius) {
-
+    
+    let fahrenheit = celsius*9/5+32;
+    return fahrenheit;
     // ...
 }
 
@@ -28,7 +37,9 @@ export function inFahrenheit (celsius) {
  * @return {number}
  */
 export const inCelsius = (fahrenheit) => {
-
+    
+    let celsius = (fahrenheit - 32)*5/9;
+    return celsius;
     // ...
 }
 
@@ -38,16 +49,29 @@ export const inCelsius = (fahrenheit) => {
  * @param {int} number
  * @return {boolean}
  */
-export const isEven = () => undefined // TODO
+// export const isEven = () => undefined // TODO
 
+export function isEven(number) {
+    if (number%2 === 0) {
+        return true;
+    } else {
+        return false;
+    };
+}
 /**
  * Schreibe eine Funktion, die prüft, ob eine Zahl ungerade ist.
  * 
  * @param {int} number
  * @return {boolean}
  */
-export const isOdd = () => undefined // TODO
-
+// export const isOdd = () => undefined // TODO
+export function isOdd(number) {
+    if (number%2 !== 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 // Kontrollfluss
 
 // if
@@ -65,9 +89,19 @@ export const isOdd = () => undefined // TODO
  * @returns {string} Jahreszeit
  */
 export function jahreszeit (monat) {
-
+    if (monat === 3 || monat === 4 || monat === 5) {
+        return "Frühling";
+    } else if (monat === 6 || monat === 7 || monat === 8) {
+        return "Sommer";
+    } else if (monat === 9 || monat === 10 || monat === 11) {
+        return "Herbst";
+    } else if (monat === 12 || monat === 1 || monat === 2) {
+        return "Winter";
+    } else {
+        return "there is no such monat number";
+    };
     // ...
-}
+};
 
 /**
  * Schreibe eine Funktion, die die Umsatzsteuer anhand des Umsatzes und des
@@ -81,8 +115,13 @@ export function jahreszeit (monat) {
  * @returns {number}
  */
 export function umsatzsteuer (umsatz, steuerjahr = 2024) {
-    
-    // ...
+    if (umsatz <= 17500 && steuerjahr<=2019 && steuerjahr>= 2003) {
+        return 0;
+    } else if (umsatz <= 22000 && steuerjahr >= 2020) {
+        return 0;
+    } else {
+        return umsatz/100*19;
+    }
 }
 
 // switch
@@ -101,13 +140,19 @@ export function umsatzsteuer (umsatz, steuerjahr = 2024) {
  * @returns {number}
  */
 export const area = (shape, params) => {
-    
+    if (shape === "circle") {
+        return Math.PI * (params.radius * params.radius);
+    } else if (shape === "triangle") {
+        return 1/2*params.base*params.height;
+    } else if (shape === "rectangle") {
+        return params.base*params.height;
+    }
     // ...
 }
 
 // loops
 
-/**
+/** JDKA
  * Schreibe eine Funktion, die alle Karten eines Kartenspiels jeweils mit ihrer
  * Farbe (Clubs, Spades, Hearts, Diamonds) und ihrem Wert (2 - 10, J, K, Q, A)
  * erzeugt.
@@ -116,10 +161,63 @@ export const area = (shape, params) => {
  * 
  * @returns {[[string, string]]}
  */
-export function deckOfCards () {
-    
-    // ...
-}
+// export function deckOfCards () {
+//     let fullDeck = [];
+//     for (let i=2; i<=14; i++){
+//         if (i<=10) {
+//             fullDeck.push(["Clubs", i]);
+//         } else {
+//             const newVal = {
+//                 11: "J",
+//                 12: "Q",
+//                 13: "K",
+//                 14: "A"
+//             };
+//             fullDeck.push(["Clubs", newVal[i]])
+//         }
+//     };
+//     for (let i=2; i<=14; i++){
+//         if (i<=10) {
+//             fullDeck.push(["Spades", i]);
+//         } else {
+//             const newVal = {
+//                 11: "J",
+//                 12: "Q",
+//                 13: "K",
+//                 14: "A"
+//             };
+//             fullDeck.push(["Spades", newVal[i]])
+//         }
+//     };
+//     for (let i=2; i<=14; i++){
+//         if (i<=10) {
+//             fullDeck.push(["Hearts", i]);
+//         } else {
+//             const newVal = {
+//                 11: "J",
+//                 12: "Q",
+//                 13: "K",
+//                 14: "A"
+//             };
+//             fullDeck.push(["Hearts", newVal[i]])
+//         }
+//     }
+//     for (let i=2; i<=14; i++){
+//         if (i<=10) {
+//             fullDeck.push(["Diamonds", i]);
+//         } else {
+//             const newVal = {
+//                 11: "J",
+//                 12: "Q",
+//                 13: "K",
+//                 14: "A"
+//             };
+//             fullDeck.push(["Diamonds", newVal[i]])
+//         }
+//     }
+//     return fullDeck;
+//     // ...
+// }
 
 /**
  * Schreibe eine Funktion, die die ersten N Antworten für das FizzBuzz-Spiel
@@ -129,7 +227,17 @@ export function deckOfCards () {
  * @see https://de.wikipedia.org/wiki/Fizz_buzz
  */
 export function fizzbuzz (n) {
-    
+    const fizz = 3;
+    const buzz = 5;
+    for (n=1; n<=100; n++) {
+        if ( n%fizz === 0) {
+            console.log("fizz")
+        } else if (n%buzz === 0 ) {
+            console.log("buzz")
+        } else {
+            console.log(n);
+        }
+    }
     // ...
 }
 
@@ -143,6 +251,13 @@ export function fizzbuzz (n) {
  * @see https://de.wikipedia.org/wiki/Fibonacci-Folge
  */
 export function fibonacci (n) {
+    for (let i=0; i<=100; i++) {
+        if (n(i) === n(i-1) + n(i-2))
+            console.log(n);
+        else {
+            continue;
+        }
+    }
     
     // ...
 }
